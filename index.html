@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>webpage for study courses</title>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/_style.css">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <li class="dropdown">
+                <a class="navbar-brand text-uppercase dropdown-toggle" href="#"
+                    id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    wonder of code
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Science</a>
+                    <a class="dropdown-item" href="#">Maths</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Languages</a>
+                </div>
+            </li>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text-capitalize">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#boards">boards <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#books">books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#exams">exams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">why us?</a>
+                    </li>
+                </ul>
+                <button type="button" class="mr-2 btn btn-outline-primary
+                    rounded-pill"  data-toggle="modal" data-target="#exampleModal">Signup</button>
+					<button type="button" class="btn btn-outline-primary
+                    rounded-pill"  data-toggle="modal" data-target="#exampleModal">Login</button>
+                <button type="button" class="btn btn-primary mx-2 rounded-pill">Book
+                    a free class</button>
+            </div>
+        </nav>
+		
+		<!--login modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Form</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<form>
+				  <div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				  </div>
+				  <div class="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword1">
+				  </div>
+				  <div class="form-group form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">Check me out</label>
+				  </div>
+				  
+				</form>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			  </div>
+			</div>
+			</div>
+			</div>
+
+        <a  href="" class="book-class"   data-toggle="tooltip" data-placement="top" title="Book class now">
+            <div><img src="img/study.jpg" alt=""></div>
+        </a>
+
+        <div class="main mt-5 pt-2">
+            <!-- home page top section starts -->
+
+            <section class="header">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="header-text">
+                            <h3>Every student matters</h3>
+                            <p>Get your doubts clarified and attend LIVE classes
+                                in the language of your choice</p>
+                            <div class="input-group">
+                                <input type="text" class="form-control"
+                                    aria-label="Dollar amount (with dot and two
+                                    decimal places)">
+                                <a href="" class="input-group-append">
+                                    <span class="input-group-text"><i class="fa
+                                            fa-search"></i></span>
+                                </a>
+                            </div>
+                            <button type="button" class="btn btn-primary
+                                rounded-pill my-3">Get the free app on Play
+                                Store</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <img src="img/header.jpeg" alt="">
+                        <div class="row mt-1 header-counter">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <i class="fa fa-archive fa-3x my-2"></i>
+                                    </div>
+                                    <div class="col">
+                                        <h2>10,80,000+</h2>
+                                        <span>Video lectures</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <i class="fa fa-smile-o fa-3x my-2"></i>
+                                    </div>
+                                    <div class="col">
+                                        <h2>4,80,000+</h2>
+                                        <span>Satisfied students</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- explore now section starts-->
+            <section class="explore">
+                <div class="row explore-now">
+                    <div class="explore-now-item py-4 mx-auto"
+                        style="width:18rem;">
+                        <h2>LIVE Classes</h2>
+                        <span>Learn live from
+                            the best tutors
+                            in India</span><br>
+                        <button class="btn btn-primary btn-col-5">Explore</button>
+                    </div>
+                    <div class="explore-now-item py-4 mx-auto"
+                        style="width:18rem;">
+                        <h2>LIVE Classes</h2>
+                        <span>Learn live from
+                            the best tutors
+                            in India</span><br>
+                        <button class="btn btn-primary btn-col-5">Explore</button>
+                    </div>
+                    <div class="explore-now-item py-4 mx-auto"
+                        style="width:18rem;">
+                        <h2>LIVE Classes</h2>
+                        <span>Learn live from
+                            the best tutors
+                            in India</span><br>
+                        <button class="btn btn-primary btn-col-5">Explore</button>
+                    </div>
+                    <div class="explore-now-item py-4 mx-auto"
+                        style="width:18rem;">
+                        <h2>LIVE Classes</h2>
+                        <span>Learn live from
+                            the best tutors
+                            in India</span><br>
+                        <button class="btn btn-primary btn-col-5">Explore</button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="gredient-effect">
+                <!-- study material section starts -->
+            <section class="study-material" id="boards">
+                <h2 class="my-3">Study materials of 50+ State Boards</h2>
+                <div class="row study-materials">
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study-material-item mx-auto">
+                        <div class="media">
+                            <a href=""><img src="img/state.png" class="mr-3"
+                                    alt="..."></a>
+                            <div class="media-body">
+                                <h5 class="">Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- exams coursify section starts -->
+            <section class="exam-coursify" id="exams">
+                <h2 class="my-3">Exams that you can ace with Coursify</h2>
+                <div class="row exam-coursifys">
+                    <div class="exam-coursify-items">
+                        <h3>Board Exams</h3>
+                    </div>
+                    <div class="exam-coursify-items mx-auto">
+                        <h3>JEE Mains & Advanced</h3>
+                    </div>
+                    <div class="exam-coursify-items">
+                        <h3>NEET</h3>
+                    </div>
+                </div>
+            </section>
+            </div>
+
+            <!-- subjects section starts -->
+            <section class="subject">
+                <h2 class="my-2">Explore our subjects</h2>
+                <div class="row study-cat">
+                    <a href="" class="study-item mx-auto btn
+                        btn-outline-secondary"><h4>Maths</h4></a>
+                    <a href="" class="study-item mx-auto btn btn-outline-info"><h4>Physics</h4></a>
+                    <a href="" class="study-item mx-auto btn
+                        btn-outline-success"><h4>Chemistry</h4></a>
+                    <a href="" class="study-item mx-auto btn btn-outline-info"><h4>Biology</h4></a>
+                    <a href="" class="study-item mx-auto btn
+                        btn-outline-warning"><h4>Science</h4></a>
+                    <a href="" class="study-item mx-auto btn btn-outline-dark"><h4>Commerce</h4></a>
+                    <a href="" class="study-item mx-auto btn
+                        btn-outline-primary"><h4>Coding</h4></a>
+                    <a href="" class="study-item mx-auto btn
+                        btn-outline-danger"><h4>Languages</h4></a>
+                </div>
+            </section>
+
+            <!-- solution section starts -->
+
+            <section class="subject" id="books">
+                <h2 class="my-2">Explore our subjects</h2>
+                <div class="w-100 text-right"><a href="" class="text-danger
+                        link">change board</a></div>
+                <div class="row study-cat">
+                    <a href="" class="study-item mx-auto btn btn-secondary"><h4>NCERT
+                            Solutions</h4></a>
+                    <a href="" class="study-item mx-auto btn btn-info"><h4>NCERT
+                            Exemplar</h4></a>
+                    <a href="" class="study-item mx-auto btn btn-success"><h4>Reference
+                            Books</h4></a>
+                    <a href="" class="study-item mx-auto btn btn-info"><h4>Exam
+                            Prep material</h4></a>
+                </div>
+            </section>
+
+            <!-- Testimonials section starts -->
+            <section class="Testimonials">
+                <div>
+                    <h2 class="py-5">Testimonials</h2>
+                    <div class="container">
+                        <div id="carouselExampleCaptions" class="carousel slide"
+                            data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleCaptions"
+                                    data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleCaptions"
+                                    data-slide-to="1"></li>
+                                <li data-target="#carouselExampleCaptions"
+                                    data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-10 col-10 offset-1
+                                            offset-lg-2 offset-md-1">
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-6 col-12">
+                                                        <img
+                                                            src="img/profile.jpg"
+                                                            class="card-img w-100"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-6 col-12">
+                                                        <div class="card-body">
+                                                            <h5
+                                                                class="card-title">Sanchit
+                                                                Kumar</h5>
+                                                            <p
+                                                                class="card-text">Lorem,
+                                                                ipsum dolor sit
+                                                                amet consectetur
+                                                                adipisicing
+                                                                elit. Animi
+                                                                fugiat ipsum,
+                                                                ullam quae culpa
+                                                                optio
+                                                                praesentium vero
+                                                                a quibusdam
+                                                                consequatur odit
+                                                                consectetur nisi
+                                                                accusamus
+                                                                exercitationem
+                                                                ex aperiam
+                                                                distinctio
+                                                                placeat ratione
+                                                                voluptatibus
+                                                                debitis quos sed
+                                                                laboriosam
+                                                                accusantium. Eos
+                                                                assumenda
+                                                                exercitationem
+                                                                animi.</p>
+                                                            <p
+                                                                class="card-text"><small
+                                                                    class="text-muted">--PhD
+                                                                    holder--</small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-10 col-10 offset-1
+                                            offset-lg-2 offset-md-1">
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-6 col-12">
+                                                        <img
+                                                            src="img/profile.jpg"
+                                                            class="card-img w-100"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-6 col-12">
+                                                        <div class="card-body">
+                                                            <h5
+                                                                class="card-title">Sanchit
+                                                                Kumar</h5>
+                                                            <p
+                                                                class="card-text">Lorem,
+                                                                ipsum dolor sit
+                                                                amet consectetur
+                                                                adipisicing
+                                                                elit. Animi
+                                                                fugiat ipsum,
+                                                                ullam quae culpa
+                                                                optio
+                                                                praesentium vero
+                                                                a quibusdam
+                                                                consequatur odit
+                                                                consectetur nisi
+                                                                accusamus
+                                                                exercitationem
+                                                                ex aperiam
+                                                                distinctio
+                                                                placeat ratione
+                                                                voluptatibus
+                                                                debitis quos sed
+                                                                laboriosam
+                                                                accusantium. Eos
+                                                                assumenda
+                                                                exercitationem
+                                                                animi.</p>
+                                                            <p
+                                                                class="card-text"><small
+                                                                    class="text-muted">--PhD
+                                                                    holder--</small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-10 col-10 offset-1
+                                            offset-lg-2 offset-md-1">
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-6 col-12">
+                                                        <img
+                                                            src="img/profile.jpg"
+                                                            class="card-img w-100"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-6 col-12">
+                                                        <div class="card-body">
+                                                            <h5
+                                                                class="card-title">Sanchit
+                                                                Kumar</h5>
+                                                            <p
+                                                                class="card-text">Lorem,
+                                                                ipsum dolor sit
+                                                                amet consectetur
+                                                                adipisicing
+                                                                elit. Animi
+                                                                fugiat ipsum,
+                                                                ullam quae culpa
+                                                                optio
+                                                                praesentium vero
+                                                                a quibusdam
+                                                                consequatur odit
+                                                                consectetur nisi
+                                                                accusamus
+                                                                exercitationem
+                                                                ex aperiam
+                                                                distinctio
+                                                                placeat ratione
+                                                                voluptatibus
+                                                                debitis quos sed
+                                                                laboriosam
+                                                                accusantium. Eos
+                                                                assumenda
+                                                                exercitationem
+                                                                animi.</p>
+                                                            <p
+                                                                class="card-text"><small
+                                                                    class="text-muted">--PhD
+                                                                    holder--</small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <a class="carousel-control-prev"
+                                href="#carouselExampleCaptions" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon"
+                                    aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next"
+                                href="#carouselExampleCaptions" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon"
+                                    aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Testimonials" style="height:70px;"></div>
+            </section>
+
+            <div class="col-md-6 col-10 mx-auto mb-5"> <button class="btn btn-primary w-100 rounded-pill"><i class="fa fa-download text-light"></i> Download the app for free</button></div>
+
+        </div>
+
+
+        <!--bootstrap js -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+        
+        
+        <script src="https://use.fontawesome.com/37bfff5a04.js"></script>
+        <script>
+            $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+        </script>
+    </body>
+</html>
